@@ -1,0 +1,10 @@
+@define-mixin ulReset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@define-mixin btnReset {
+  border: none;
+  outline: none;
+}

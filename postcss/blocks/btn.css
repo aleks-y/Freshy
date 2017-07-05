@@ -1,0 +1,77 @@
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 95px;
+  height: 38px;
+  padding: 10px 15px;
+  border-radius: 4px;
+
+  font: normal 700 14px/15px $font-main;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  text-overflow: ellipsis;
+
+  &--medium {
+    max-width: 152px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+
+  &--blue {
+    color: $text-color-white;
+
+    background-color: $bg-color-blue;
+
+    .btn__text::after {
+      background-color: $text-color-white;
+    }
+  }
+
+  &--white {
+    color: $text-color-blue;
+
+    background-color: $bg-color-white;
+
+    .btn__text::after {
+      background-color: $text-color-blue;
+    }
+  }
+
+  &:hover {
+    .btn__text {
+      transform: translateY(-3px);
+
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.btn__text {
+  position: relative;
+
+  max-width: 100%;
+
+  transition: transform 0.15s ease-in;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    transform: scale(0);
+    transition: transform 0.15s ease-in;
+  }
+}

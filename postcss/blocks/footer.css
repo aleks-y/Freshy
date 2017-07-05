@@ -1,0 +1,85 @@
+.footer {
+
+}
+
+.footer__top {
+  padding: 37px 0 63px;
+
+  color: $text-color-gray--dark;
+
+  background-color: $bg-color-white;
+}
+
+.footer__bottom {
+  font: normal 400 14px/1em  $font-main;
+  color: $text-color-white;
+
+  background-color: $bg-color-gray--darken;
+
+  .footer__wrapper {
+    align-items: center;
+    height: 121px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  min-width: $width-content;
+  width: $width-content;
+  margin: 0 auto;
+}
+
+.footer__item {
+  flex: 0 1 270px;
+
+  h3 {
+    font: normal 700 22px/1em $font-main;
+    text-transform: uppercase;
+    color: $text-color-gray--dark;
+  }
+}
+
+.footer__list {
+  @mixin ulReset;
+
+  li {
+    margin-bottom: 5px;
+
+    font: normal 400 14px/1.5em $font-text;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color-gray--dark;
+
+    transition: color 0.15s ease-in;
+
+    &:hover {
+      color: $text-color-blue;
+    }
+  }
+
+  a[href^="tel"],
+  a[href^="mailto"],
+  b {
+    font-weight: 700;
+  }
+}
+
+.footer__to-top {
+  font: normal 400 14px/1em  $font-main;
+  color: $text-color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: color 0.15s ease-in;
+
+  &:hover {
+    color: $text-color-blue;
+  }
+}

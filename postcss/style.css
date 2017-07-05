@@ -1,0 +1,18 @@
+@import "utils/variables.css";
+@import "utils/mixins.css";
+
+@import "global/fonts.css";
+@import "global/scafolding.css";
+@import "global/form.css";
+@import "blocks/btn.css";
+
+@import "blocks/main-header.css";
+@import "blocks/logo.css";
+@import "blocks/main-nav.css";
+@import "blocks/about.css";
+@import "blocks/section-header.css";
+@import "blocks/goods.css";
+@import "blocks/carousel.css";
+@import "blocks/features.css";
+@import "blocks/contact.css";
+@import "blocks/footer.css";

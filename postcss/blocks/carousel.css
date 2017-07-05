@@ -1,0 +1,138 @@
+.carousel {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 57px;
+}
+
+.carousel__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin: 0 -15px;
+
+  overflow-x: hidden;
+}
+
+.carousel__item {
+  position: relative;
+
+  flex: 0 1 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 270px;
+  margin: 0 15px;
+  padding: 15px;
+
+  background-color: $bg-color-blue;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover .carousel__content {
+    transform: translateY(0);
+  }
+
+  &:hover .carousel__btn {
+    transform: scale(1);
+  }
+}
+
+.carousel__content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-color-white;
+
+  transform: translateY(30px);
+  transition: transform 0.15s ease-in;
+
+  h3 {
+    margin: 0 0 9px;
+
+    font: normal 700 20px/1em $font-main;
+  }
+
+  b {
+    margin: 0 0 9px;
+
+    font: normal 400 24px/1em $font-main;
+  }
+}
+
+.carousel__btn {
+  transform: scale(0);
+  transition: transform 0.15s ease-in;
+}
+
+.carousel__toggler {
+  position: absolute;
+  top: 50%;
+
+  width: 40px;
+  height: 40px;
+  border: 1px solid $text-color-gray;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  transform: translateY(-50%);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 13.5px;
+    height: 13.5px;
+    border-bottom: 1px solid $text-color-gray;
+    border-left: 1px solid $text-color-gray;
+  }
+
+  &--prev {
+    left: -48px;
+  }
+
+  &--next {
+    right: -48px;
+  }
+
+  &--prev::after {
+    transform: translate(-25%, -50%) rotate(45deg);
+  }
+
+  &--next::after {
+    transform: translate(-75%, -50%) rotate(-135deg);
+  }
+
+  &:hover {
+    border-width: 2px;
+    border-color: $text-color-blue;
+  }
+
+  &:hover::after {
+    border-width: 2px;
+    border-color: $text-color-blue;
+  }
+}

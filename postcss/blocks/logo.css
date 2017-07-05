@@ -1,0 +1,52 @@
+.logo {
+
+}
+
+.logo__link {
+  position: relative;
+
+  display: block;
+
+  font-size: 0;
+  color: $text-color-white;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-color: $text-color-white;
+
+    transform: scale(0);
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover::after {
+    transform: scale(1);
+  }
+}
+
+.logo__text {
+  font-size: 25px;
+  line-height: 1.48;
+  letter-spacing: 0.04em;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+
+  &--light {
+    font-weight: 200;
+  }
+}

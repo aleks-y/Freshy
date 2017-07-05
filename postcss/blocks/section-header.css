@@ -1,0 +1,30 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 0;
+
+  font: normal 700 34.17px/26px $font-main;
+  text-transform: uppercase;
+  color: $text-color-blue;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 80px;
+    height: 1px;
+    margin-top: 30px;
+
+    background-color: $text-color-gray;
+  }
+
+  &--white {
+    color: $text-color-white;
+
+    &::after {
+      background-color: $text-color-white;
+    }
+  }
+}

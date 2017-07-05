@@ -1,0 +1,84 @@
+.contact {
+  min-width: $width-content;
+  height: 534px;
+
+  background-color: $bg-color-blue;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  width: $width-content;
+  margin: 0 auto;
+}
+
+.contact__map {
+  position: relative;
+
+  flex: 0 1 654px;
+}
+
+.contact__map-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  display: block;
+  min-width: 708px;
+  width: 56vw;
+
+  background-image: url("../img/bg-map.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100px;
+
+    background-image: linear-gradient(to left bottom, $bg-color-blue 0%, $bg-color-blue 50%, transparent 51%, transparent 100%);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.contact__content {
+  flex: 0 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  padding: 137px 0 162px;
+
+  h2 {
+    align-items: flex-end;
+
+    margin-bottom: 7px;
+  }
+
+  p {
+    max-width: 100%;
+    margin-bottom: 32px;
+
+    text-align: right;
+    color: $text-color-white;
+  }
+
+  a {
+    width: 105px;
+    height: 41px;
+  }
+}

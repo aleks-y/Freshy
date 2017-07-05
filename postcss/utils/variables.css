@@ -1,0 +1,22 @@
+$width-content: 1170px;
+$width-desktop: 1280px;
+
+$font-main: "Montserrat", "Arial", sans-serif;
+$font-text: "Hind", "Arial", sans-serif;
+
+$color-white: #ffffff;
+$color-gray: #a1a1a1;
+$color-gray--dark: #737373;
+$color-gray--darken: #2b2b2b;
+$color-blue: #00a1eb;
+$color-blue--dark: #132b5d;
+
+$bg-color-white: $color-white;
+$bg-color-gray--darken: $color-gray--darken;
+$bg-color-blue: $color-blue;
+$bg-color-blue--dark: $color-blue--dark;
+
+$text-color-white: $color-white;
+$text-color-gray: $color-gray;
+$text-color-gray--dark: $color-gray--dark;
+$text-color-blue: $color-blue;

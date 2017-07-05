@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Montserrat", "Arial", sans-serif;
+  src:
+    url("../fonts/montserrat-bold-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat", "Arial", sans-serif;
+  src:
+    url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat", "Arial", sans-serif;
+  src:
+    url("../fonts/montserrat-extralight-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-extralight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind", "Arial", sans-serif;
+  src:
+    url("../fonts/hind-bold-webfont.woff2") format("woff2"),
+    url("../fonts/hind-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind", "Arial", sans-serif;
+  src:
+    url("../fonts/hind-regular-webfont.woff2") format("woff2"),
+    url("../fonts/hind-reg4lar-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

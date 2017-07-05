@@ -1,0 +1,41 @@
+.goods {
+  padding: 85px 0;
+
+  background-color: $bg-color-white;
+  background-image: url("../img/bg-pattern-gauze.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.goods__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: $width-content;
+  margin: 0 auto;
+}
+
+.goods__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 630px;
+  margin-bottom: 35px;
+
+  text-align: center;
+
+  h2 {
+    align-items: center;
+  }
+
+  p {
+    max-width: 100%;
+
+    color: $text-color-gray;
+  }
+}
